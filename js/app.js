@@ -3,7 +3,22 @@ console.log("working!")
 
 //1 chiedere all'utente numero km da percorrere
 
-  //1.1 definire quanto costa 1 km
+let askDistance = prompt ("distanza")
+
+console.log(askDistance)
+
+let oneKm = 1
+
+if (oneKm === 1) {
+  let oneKm = 0.21;
+
+  console.log(oneKm)
+}
+
+
+
+  //1.1 definire quanto costa 1 km 
+
 
 //2 chiedere all'utente eta'
 
