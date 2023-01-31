@@ -1,7 +1,7 @@
 console.log("working!")
 
 
-//1 chiedere all'utente numero km da percorrere
+//1 chiedere all'utente numero km da percorrere-------------
 
 let askDistance = prompt ("distanza")
 
@@ -11,7 +11,7 @@ console.log(askDistance)
 
 
 
-//1.1 definire quanto costa 1 km 
+//1.1 definire quanto costa 1 km -------
 
 
 let pricePerKm = 0.21;
@@ -21,7 +21,7 @@ let finalPrice = askDistance * pricePerKm;
 
 console.log(finalPrice)
 
-//2 chiedere all'utente eta'
+//2 chiedere all'utente eta'-------------------------
 
 let askAge = prompt ("quanti anni hai?")
 
@@ -31,7 +31,7 @@ console.log(askAge)
 
 
 
-//2.1 minore 18 anni----------------------------
+//2.1 minore 18 anni scontare del 20%----------------------------
 
 //definisco che boysDiscount equivale a (finalPrice/100*20)
 //ovvero l'importo da sottrarre a sua volta sempre a finalPrice
@@ -50,7 +50,7 @@ console.log(discountedBoys)
 
 
 
-//2.2 maggiore 65 anni-------------------------
+//2.2 maggiore 65 anni scontare del 40%-------------------------
 
 //definisco che grandPasDiscount equivale a (finalPrice/100*40)
 //ovvero l'importo da sottrarre a sua volta sempre a finalPrice
@@ -67,6 +67,8 @@ let discountedGrandPas = (finalPrice - grandPasDiscount)
 console.log(discountedGrandPas)
 
 
+
+//3 inserire bivio in base all'eta' scelta-----
 
 // se scelgo minore di 18 anni allora
 
@@ -88,6 +90,13 @@ if (askAge > 65) {
 
 console.log(finalPrice)
 
+
+
+// 4 output in html del prezzo con centesimi
+
+let finalPriceFixed = finalPrice.toFixed(2)
+
+console.log(finalPriceFixed)
 
 
 
