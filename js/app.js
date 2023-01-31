@@ -7,13 +7,15 @@ let askDistance = prompt ("distanza")
 
 console.log(askDistance)
 
-let oneKm = 1
+let oneKm = "1";
 
-if (oneKm === 1) {
-  let oneKm = 0.21;
+let oneKmPrice = "0.21";
 
-  console.log(oneKm)
-}
+oneKm = oneKmPrice;
+
+console.log(oneKm)
+
+
 
 
 
