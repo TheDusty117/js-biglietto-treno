@@ -7,24 +7,42 @@ let askDistance = prompt ("distanza")
 
 console.log(askDistance)
 
-let oneKm = "1";
-
-let oneKmPrice = "0.21";
-
-oneKm = oneKmPrice;
-
-console.log(oneKm)
 
 
 
 
+//1.1 definire quanto costa 1 km 
 
-  //1.1 definire quanto costa 1 km 
 
+let pricePerKm = 0.21;
+
+let finalPrice = askDistance * pricePerKm;
+
+
+console.log(finalPrice)
 
 //2 chiedere all'utente eta'
 
+let askAge = prompt ("quanti anni hai?")
 
+console.log(askAge)
+
+
+//2.1 minore 18 anni
+
+let boyDiscount = (finalPrice/100*20) 
+
+let grandPasDiscount = (finalPrice/100*40)
+
+//2.2 maggiore 65 anni
+
+
+
+// finalPrice = finalPrice - 10;
+
+let discountedPrice = finalPrice - 10
+
+console.log(discountedPrice)
 
 //3 applicare sconto 20% se sotto 18 anni
 
