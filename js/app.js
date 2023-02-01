@@ -3,17 +3,15 @@ console.log("working!")
 
 //1 chiedere all'utente numero km da percorrere-------------
 
-let askDistance = prompt ("distanza")
+const askDistance = prompt ("distanza")
 
 console.log(askDistance)
 
 
-
-
-
 //1.1 definire quanto costa 1 km -------
 
-
+// se scrivo PRICE_PER_KM intendo dire che questa info
+// NON E' DA TOCCARE e fa parte del sistema
 let pricePerKm = 0.21;
 
 let finalPrice = askDistance * pricePerKm;
@@ -23,7 +21,7 @@ console.log(finalPrice)
 
 //2 chiedere all'utente eta'-------------------------
 
-let askAge = prompt ("quanti anni hai?")
+const askAge = prompt ("quanti anni hai?")
 
 console.log(askAge)
 
@@ -37,6 +35,7 @@ console.log(askAge)
 //ovvero l'importo da sottrarre a sua volta sempre a finalPrice
 
 let boysDiscount = (finalPrice/100*20) 
+
 
 // prezzo scontato under 18
 
@@ -73,18 +72,21 @@ console.log(discountedGrandPas)
 // se scelgo minore di 18 anni allora
 
 
-if (askAge < 18) {
+if (askAge <= 18) {
   finalPrice = discountedBoys
+  
+  document.getElementById("discount").innerHTML = boysDiscount
 }
 
-console.log(finalPrice)
+
+console.log(boysDiscount)
 
 
 // se scelgo maggiore di 65 anni allora
 
 
 
-if (askAge > 65) {
+if (askAge >= 65) {
   finalPrice = discountedGrandPas
 }
 
